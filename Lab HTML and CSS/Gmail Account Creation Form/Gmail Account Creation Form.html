@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation</title>
+    <style>
+      h3{
+        color: white;
+      }
+        body{
+          margin: 0px;
+        }
+        input{
+          padding: 5px;
+          width: 200px;
+          margin-bottom: 10px;
+        }
+        #email:focus{
+          background-color: rgba(70, 130, 180, 0.35);
+        }
+        button{
+          padding: 5px 10px;
+          background-color: fuchsia;
+          border-radius: 3px;
+          border: none;
+          margin-left: 25px;
+        }
+        div{
+          position: absolute;
+          left: 541px;
+          top: 150px;
+          border: 1px solid white;
+          width: 240px;
+          padding-left: 25px;
+          height: 220px;
+          border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop>
+      <source src="Sample.mp4" type="video/mp4">
+    </video>
+    <div>
+      <form>
+        <h3>Create Gmail Account</h3>
+        <input type="text" placeholder="Full Name" required>
+        <br>
+        <input type="number" placeholder="Contact Number" min="6000000000" max="9999999999" required>
+        <br>
+        <input type="email" id="email" placeholder="Enter email id" required>
+        <br>
+        <button>Reset</button>
+        <button>Submit</button>
+      </form>
+    </div>
+</body>
+</html>

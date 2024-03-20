@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+      header{
+        background-color: red;
+        color: black;
+        height: 59px;
+      }
+      h2{
+        margin: 0px;
+        padding-top: 16px;
+        text-align: center;
+      }
+      ul{
+        padding: 0px;
+      }
+      body{
+        padding: 0px;
+        margin: 0px;
+      }
+      section{
+        left: 25%;
+        width: 50%;
+      }
+      nav>ul{
+        padding-left: 30px;
+        margin: 0px;
+      }
+      nav{
+        background-color: gray;
+      }
+      
+      nav>#primary-bar>il>a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: inline-block;
+      }
+      nav>#primary-bar>il>a:hover{
+        background-color: rgb(46, 42, 42);
+      }
+      #primary-link2{
+        position: relative;
+      }
+      #secondary-bar1{
+        position: absolute;
+        left: 0px;
+        display: none;
+      }
+      #primary-link3{
+        position: relative;
+      }
+      #secondary-bar2{
+        position: absolute;
+        left: 0px;
+        display: none;
+      }
+      .secondary-bar>il>a{
+        text-decoration: none;
+        padding: 10px 5px;
+        display: inline-block;
+      }
+      .secondary-bar{
+        background-color: rgb(214, 247, 236);
+        width: 82px;
+      }
+      #primary-link2:hover #secondary-bar1{
+        display: block;
+      }
+      #primary-link3:hover #secondary-bar2{
+        display: block;
+      }
+    </style>
+</head>
+<body>
+  <section>
+    <header><h2>Demo of Dropdown</h2></header>
+    <nav>
+      <ul class="primary-bar" id="primary-bar">
+        <il id="primary-link1">
+          <a href="/link1">Link 1</a>
+        </il>
+        <il id="primary-link2">
+          <a href="/link2">Link 2</a>
+          <ul class="secondary-bar" id="secondary-bar1">
+            <il>
+              <a href="/dd-link1">DD_link_1</a>
+            </il>
+            <il>
+              <a href="/dd-link2">DD_link_2</a>
+            </il>
+            <il>
+              <a href="/dd-link3">DD_link_3</a>
+            </il>
+          </ul>
+        </il>
+        <il id="primary-link3">
+          <a href="/link3">Link 3</a>
+          <ul class="secondary-bar" id="secondary-bar2">
+            <il>
+              <a href="/dd-link4">DD_link_4</a>
+            </il>
+            <il>
+              <a href="/dd-link5">DD_link_5</a>
+            </il>
+            <il>
+              <a href="/dd-link6">DD_link_6</a>
+            </il>
+          </ul>
+        </il>
+      </ul>
+    </nav>
+  </section>
+    
+</body>
+</html>

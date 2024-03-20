@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Bar Graph</title>
+    <style>
+      p{
+        font-size: 30px;
+        margin-top: 0px;
+        padding-bottom: 10px;
+        font-weight: bold;
+      }
+      body{
+        margin: 0px;
+      }
+      .main_container{
+        width: 278px;
+        background-color: rgb(219, 207, 207);
+        margin: 50px auto;
+        text-align: center;
+        
+      }
+      .animation_box{
+        width: 30px;
+        height: 300px;
+        background-color: gray;
+      }
+      @keyframes animation_1{
+        0%{
+          height: 100%;
+        }
+        100%{
+          height: 70%;
+        }
+      }
+      #animation_1{
+        background-color: white;
+        animation-name: animation_1;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes animation_2{
+        0%{
+          height: 100%;
+        }
+        100%{
+          height: 60%;
+        }
+      }
+      #animation_2{
+        background-color: white;
+        animation-name: animation_2;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+      @keyframes animation_3{
+        0%{
+          height: 100%;
+        }
+        100%{
+          height: 20%;
+        }
+      }
+      #animation_3{
+        background-color: white;
+        animation-name: animation_3;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+      .animation_box_container{
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        margin: 20px 30px;
+      }
+    </style>
+</head>
+<body>
+    <div class="main_container">
+      <div class="animation_box_container">
+        <div class="animation_box">
+          <div id="animation_1"></div>
+        </div>
+        <br>
+        30%
+      </div>
+
+      <div class="animation_box_container">
+        <div class="animation_box">
+          <div id="animation_2"></div>
+        </div>
+        <br>
+        40%
+      </div>
+
+      <div class="animation_box_container">
+        <div class="animation_box">
+          <div id="animation_3"></div>
+        </div>
+        <br>
+        80%
+      </div>
+      <br>
+      <p>Bar Plot</p>
+      
+    </div>
+</body>
+</html>
